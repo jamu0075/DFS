@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
 
+    <!-- Lightbox Effect: http://www.dwuser.com/education/content/click-to-zoom-for-photos-adding-lightbox-effect-to-your-images/ -->
     <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
     <style type="text/css">
         a.fancybox img {
@@ -59,13 +60,13 @@
       </div>
     </div>
 
+    <!-- Lightbox Effect: http://www.dwuser.com/education/content/click-to-zoom-for-photos-adding-lightbox-effect-to-your-images/ -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
     <script type="text/javascript">
         $(function($){
             var addToAll = true;
-            var gallery = false;
             var titlePosition = 'inside';
             $(addToAll ? 'img' : 'img.fancybox').each(function(){
                 var $this = $(this);
@@ -74,14 +75,13 @@
                 var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
                 $this.wrap(a);
             });
-            if (gallery)
-                $('a.fancybox').attr('rel', 'fancyboxgallery');
             $('a.fancybox').fancybox({
                 titlePosition: titlePosition
             });
         });
         $.noConflict();
     </script>
+
   </body>
 
 </html>
