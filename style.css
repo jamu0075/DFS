@@ -1,7 +1,8 @@
 
 body {
   background-color: white;
-  font-family: 'Abel';
+  font-family: 'URW Chancery L, cursive';
+  font-style: oblique;
   margin-left: 2.2em;
   margin-top: 2.2em;
   margin-right: 2.2em;
@@ -11,13 +12,17 @@ a {
   outline: 0;
 }
 
+#header {
+  padding-bottom: 1.5em;
+}
+
 .header-wrapper li {
   display: inline-block;
   position: relative;
   text-decoration: none;
   font-size: 20px;
   color: #808080;
-  padding: 0 1.4em;
+  padding: 0 1em;
 
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -57,7 +62,6 @@ a {
   top: 2em;
 }
 
-
 img {
   max-width: 100%;
   display: block;
@@ -65,9 +69,9 @@ img {
 }
 
 .grid {
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   -moz-column-gap: 10px;
   -webkit-column-gap: 10px;
   column-gap: 10px;
@@ -79,9 +83,9 @@ img {
   margin-bottom: 10px;
 }
 .grid .picture img {
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 .grid .picture:hover img {
   opacity: .90;
